@@ -1,0 +1,77 @@
+1. Enter the number of hours it took you to complete the project between
+   the <<< and >>> signs below (eg, <<<10>>>).
+   
+   <<<36>>>
+   
+2. Enter the difficulty level (1: very easy; 5: very difficult) of the project
+   between the <<< and >>> signs below (eg, <<<3>>>).
+
+   <<<3>>>
+
+3. Provide a short description of how you approached each problem, issues you 
+   encountered, and how you resolved those issues.
+
+   Problem 1 (Autocomplete Term)
+       Approach: compareTo, compare two string, not number
+
+       Issues and resolution: I change Double.compare to String.CASE_INSENSITIVE_ORDER.compare, in this way I can
+       compare two string as the long of the string, so I can get the difference between the string. And if I need it
+       I can use this method to get how long the string is.
+
+       Approach: ReverseWeightOrder, the output is not right
+
+       Issues and resolution: I get output is opposite way all the time, if I want 1, I get -1. So I swap two number,
+       the first number put in the last place, then I can get the right output.
+
+       Approach: PrefixOrder, I am working on how to make this class inside a class work.
+
+       Issues and resolution: I take tutoring class, and Laura explained to me what is this code mean, she say I am
+       calling a object and make the a class create object, but it just make order in other way.
+
+       Approach:PrefixOrder.compare, there is a corner case, when "r" biger then the "Term", it will trow a error. But
+       if I use min(), my project did not input math.java. My tutor Laure say I can use Math.min to input it, and I can
+       substring them to get the output I want.
+
+   Problem 2 (Binary Search Deluxe)
+       Approach: LastIndexOf
+
+       Issues and resolution: need to make my own Binary Search. First, I go over the binary search code from our class
+       and drow the working principle on paper, then I change it to the Binary Search Deluxe we need. But the thing is,
+       I can not just change the variable. So I google it, and learned from other people's understanding of Binary
+       Search, and I remembered my goal. I am not make a new Binary Search, I just need change it. So I get the code
+       form class, then I change it to receiver, It is work. there is some error on the first time, but the hint on
+       gradescope help me debug.
+
+   Problem 3 (Autocomplete)
+       Approach: Porblem 94, make BinarySearchDeluxe handles empty arrays correctly
+
+       Issues and resolution:  If give Auto complete with arguments ([]), I need output value 0, but I use b-a+1, so if
+       b-a =0, then my out put is 1, witch is incorrect. So I naively use if b-a = 0,then return 0, but it not work. So
+       I think about the reason why this happen, I see the Term1 is [], so I use terms.length == 0, this time it work.
+
+       Approach: Porblem 93, give [] to autocomplete
+
+       Issues and recolution: if we give [], then I need output something to make sure my code can handles empty arryar
+       but output a empty arrayr. So I try to return 0, but it say I have to return trem, not int. So I try to return
+       new a object term[0], that make me have a empty arrays.
+
+       Approach: Porblem 91 & 95
+
+       Issues and resolution: I did not solve it, I need help on that, but it is too late
+   
+4. Did you receive help from anyone? List their names, status (classmate, 
+   CS210 grad, TA, other), and the nature of help received.
+
+   Name               Status       Help Received
+   ----               ------       -------------
+
+   Laura               tutor          help me on java language, and explain to me what the code means.
+
+5. List any other comments here. Feel free to provide any feedback on how
+   much you learned from doing the assignment, and whether you enjoyed
+   doing it.
+
+   I feel very confidence this time. Thanks to my tutoring class, I did very good job on three exercise. This three
+   problem help me go through the basic java code we lean on class. By doing this, I did much biter then projet 1 & 2
+   This time, I star from the first day, but I still need more help, because porblem 91 & 95 I did not make it. there
+   is not hint on gradescope, also I did not google it out. I will ask about this next week.
